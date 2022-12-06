@@ -1,4 +1,3 @@
-console.log("Hello World!\n==========\n");
 //Exercise 1
 for(let i = 1; i < 100; i++)
     if(i % 2 != 0){
@@ -49,6 +48,7 @@ let x = 1;
 
 do{
     let output = "";
+    let x = 0;
 
     if(num %3 == 0){
     output += "FIZZ";
@@ -69,13 +69,13 @@ let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random numbe
 
 for(let i = 1; i <= n; i++){
     if (i == value) {
-       console.log('Found ${value}');
+       console.log(`Found ${value}`);
     break;
     }
     
 }
 
-console.log('Did not find ${value}')
+console.log(`Did not find ${value}`)
 //Exercise 5 Customize FizzBuzz
 let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
 let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1); // creates a random number between 1 and 10
@@ -94,5 +94,5 @@ for (let i = start; i <= end; i++) {
         output += "BUZZ"
     }
 
-    console.log('${i} ${output}');
+    console.log(`${i} ${output}`);
 }
